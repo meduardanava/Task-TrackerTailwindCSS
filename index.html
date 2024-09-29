@@ -3,21 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Task & Tracker - Tailwind CSS</title>
+    <title>Usuários e Tarefas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-auto mt-10">
-        <h1 class="text-3xl text-center mb-4">Lista de Tarefas</h1>
-        <form class="mb-3">
-            <input type="text" class="border border-gray-300 p-2 rounded w-full" placeholder="Adicionar nova tarefa">
-            <button type="submit" class="bg-blue-500 text-white p-2 rounded mt-2">Adicionar</button>
-        </form>
-        <ul class="list-none">
-            <li class="bg-white p-4 flex justify-between items-center shadow mb-2">Tarefa 1 <button class="bg-red-500 text-white px-2 py-1 rounded">Remover</button></li>
-            <li class="bg-white p-4 flex justify-between items-center shadow mb-2">Tarefa 2 <button class="bg-red-500 text-white px-2 py-1 rounded">Remover</button></li>
-        </ul>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <!-- Título da página -->
+        <h1 class="text-3xl font-bold text-center mb-6">Gestão de Usuários e Tarefas</h1>
+
+        <!-- Tabela de Usuários -->
+        <h2 class="text-2xl font-semibold mb-4">Usuários</h2>
+        <table class="min-w-full bg-white border">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border">ID</th>
+                    <th class="py-2 px-4 border">Nome</th>
+                    <th class="py-2 px-4 border">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de usuário -->
+                <tr class="text-center">
+                    <td class="py-2 px-4 border">1</td>
+                    <td class="py-2 px-4 border">João Silva</td>
+                    <td class="py-2 px-4 border">joao@email.com</td>
+                </tr>
+                <!-- Mais usuários aqui -->
+            </tbody>
+        </table>
+
+        <!-- Tabela de Tarefas -->
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Tarefas de Usuário</h2>
+        <table class="min-w-full bg-white border">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border">ID</th>
+                    <th class="py-2 px-4 border">Descrição</th>
+                    <th class="py-2 px-4 border">Data Início</th>
+                    <th class="py-2 px-4 border">Data Limite</th>
+                    <th class="py-2 px-4 border">Concluída</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de tarefa -->
+                <tr class="text-center">
+                    <td class="py-2 px-4 border">1</td>
+                    <td class="py-2 px-4 border">Finalizar Projeto</td>
+                    <td class="py-2 px-4 border">2024-09-01</td>
+                    <td class="py-2 px-4 border">2024-09-30</td>
+                    <td class="py-2 px-4 border">Não</td>
+                </tr>
+                <!-- Mais tarefas aqui -->
+            </tbody>
+        </table>
+
+        <!-- Tabela de Hábitos -->
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Hábitos</h2>
+        <table class="min-w-full bg-white border">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border">ID</th>
+                    <th class="py-2 px-4 border">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de hábito -->
+                <tr class="text-center">
+                    <td class="py-2 px-4 border">1</td>
+                    <td class="py-2 px-4 border">Exercitar-se diariamente</td>
+                </tr>
+                <!-- Mais hábitos aqui -->
+            </tbody>
+        </table>
+
+        <!-- Tabela de Histórico de Hábitos -->
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Histórico de Hábitos</h2>
+        <table class="min-w-full bg-white border">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border">ID</th>
+                    <th class="py-2 px-4 border">Data</th>
+                    <th class="py-2 px-4 border">ID Hábito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de histórico de hábito -->
+                <tr class="text-center">
+                    <td class="py-2 px-4 border">1</td>
+                    <td class="py-2 px-4 border">2024-09-20</td>
+                    <td class="py-2 px-4 border">1</td>
+                </tr>
+                <!-- Mais históricos de hábitos aqui -->
+            </tbody>
+        </table>
     </div>
-    
 </body>
 </html>
